@@ -1,0 +1,14 @@
+table {
+    margin-left : 15%;
+    margin-right: 15%;
+    text-align: center;
+    border: 1px solid darkgray;
+}
+
+table caption {
+    font-size: large;
+}
+
+table td {
+    padding : 1em;
+}
