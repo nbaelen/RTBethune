@@ -10,10 +10,10 @@ import java.util.Scanner;
  *
  * @author Dav
  */
-public class HotLineServeurAvecThread {
+public class ServerAvecThread {
 
   public static void main(String[] args) {
-    try (ServerSocket socketEcoute = new ServerSocket(53200)) {
+    try (ServerSocket socketEcoute = new ServerSocket(50000)) {
       System.out.println(".... Serveur à l'écoute ....");
       while (true) {
         Socket socketService = socketEcoute.accept();
@@ -26,19 +26,3 @@ public class HotLineServeurAvecThread {
   }
 }
 
-class ClientThread extends Thread {
-
-  private Socket ss;      // Socket de service du client
-  private PrintStream ps; // PrintStream du client
-  private BufferedReader br; // BufferedReader du client
-  
-  public ClientThread(Socket ss) {
-    this.ss = ss;
-  }
-
-  @Override
-  public void run() {
-    try {
-  
-  }
-}
